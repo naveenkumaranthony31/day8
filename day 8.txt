@@ -1,0 +1,107 @@
+ 1)https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+ 
+  Class - Movie
+
+    class Movie {
+  
+    constructor(title,studio,rating){
+    
+    this.title = title;
+    
+    this.studio = studio;
+    
+    this.rating = rating;
+
+  }
+ 
+    PG(arr){
+   
+    var res = arr.filter(element =>element.movie(this.title));
+    
+   return res;
+  
+  }
+
+  }
+
+    var final = new Movie("Casino Royale","Eon Productions","PG13");
+ 
+console.log(final); 
+
+ 2)write a class to calculate uber price.
+
+  class Uber {
+  
+  constructor(name,place,distance){
+    
+   this.name = name;
+    
+   this.place = place    
+   this.distance = distance;
+   
+    }
+    
+  Amount(){
+      
+  var Km = 2;
+     
+    return `Fare  ${Km*this.distance }` ;
+     
+  }
+   
+   }
+      
+    var s1 = new Uber("rahul","trichy","8");
+      
+   console.log(s1.Amount());
+
+ 3)Write a “person” class to hold all the details.
+ 
+  class Person {
+  
+  constructor(name) {
+    
+   this.name = name;
+  
+    }
+
+  
+  introduceSelf() {
+    
+    return(`Hi! I'm ${this.name}`);
+  
+   }
+
+   }
+  
+   var s1=new Person("rahul");
+
+   console.log(s1.introduceSelf());
+
+
+ 4)https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+ class Circle {
+  constructor(radius,color){
+    
+  this.radius = radius;
+   
+  this.color = color;
+ 
+ }
+ 
+  Radius(){return this.radius}
+  
+  Color(){return this.color}
+ 
+  Area(){return Math.PI * Math.pow(this.radius),2}
+ 
+  Circumference(){return 2  * Math.PI * this.radius}
+}
+
+
+  var res= new Circle("1.0","red");
+
+  console.log(res.Radius(),res.Color(),res.Area(),res.Circumference());
+
+    
